@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Task Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar Navbar -->
+    <div class="navbar" id="navbar">
+        <div class="navbar-header" onclick="toggleNavbar()"></div>
+        <div class="navbar-content" id="navbar-content">
+            <!-- Task buttons 1 to 15 -->
+            <button class="task-button" data-task="task1" data-description="Welcome to Task 1, created by Javeed Quadri Mohammad. This is the first task and includes basic elements.">Task 1</button>
+            <button class="task-button" data-task="task2" data-description="Welcome to Task 2, created by Javeed Quadri Mohammad. This task includes intermediate complexity.">Task 2</button>
+            <button class="task-button" data-task="task3" data-description="Welcome to Task 3, created by Javeed Quadri Mohammad. This task demonstrates advanced functionality.">Task 3</button>
+            <button class="task-button" data-task="task4" data-description="Welcome to Task 4, created by Javeed Quadri Mohammad. This task has interactive features.">Task 4</button>
+            <button class="task-button" data-task="task5" data-description="Welcome to Task 5, created by Javeed Quadri Mohammad. This task includes custom CSS styling.">Task 5</button>
+            <button class="task-button" data-task="task6" data-description="Welcome to Task 6, created by Javeed Quadri Mohammad. This task involves JavaScript functionalities.">Task 6</button>
+            <button class="task-button" data-task="task7" data-description="Welcome to Task 7, created by Javeed Quadri Mohammad. This task involves data handling and DOM manipulations.">Task 7</button>
+            <button class="task-button" data-task="task8" data-description="Welcome to Task 8, created by Javeed Quadri Mohammad. This task showcases animation techniques.">Task 8</button>
+            <button class="task-button" data-task="task9" data-description="Welcome to Task 9, created by Javeed Quadri Mohammad. This task demonstrates API integrations.">Task 9</button>
+            <button class="task-button" data-task="task10" data-description="Welcome to Task 10, created by Javeed Quadri Mohammad. This task involves complex logic and interactivity.">Task 10</button>
+            <button class="task-button" data-task="task11" data-description="Welcome to Task 11, created by Javeed Quadri Mohammad. This task shows off custom libraries and frameworks.">Task 11</button>
+            <button class="task-button" data-task="task12" data-description="Welcome to Task 12, created by Javeed Quadri Mohammad. This task includes embedded content.">Task 12</button>
+            <button class="task-button" data-task="task13" data-description="Welcome to Task 13, created by Javeed Quadri Mohammad. This task demonstrates content management.">Task 13</button>
+            <button class="task-button" data-task="task14" data-description="Welcome to Task 14, created by Javeed Quadri Mohammad. This task demonstrates layout flexibility and responsiveness.">Task 14</button>
+            <button class="task-button" data-task="task15" data-description="Welcome to Task 15, created by Javeed Quadri Mohammad. This task integrates several web technologies.">Task 15</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to Javeed's Dynamic Project's Gallery</h1>
+
+        <div class="popup-message" id="popup-message">
+            <div class="popup-content">
+                <div class="message-text" id="popup-message-text"></div>
+                <button id="go-check-it" class="go-check-it">Go Check It Out</button>
+            </div>
+        </div>
+
+        <div class="display-area" id="display-area">
+            <div class="default-message">Click The ☰ Icon Button at the NavBar to display the different tasks created by me here.</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Javeed Quadri Mohammad | Student ID: S00459899</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

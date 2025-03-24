@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Inventory</title>
+    <link rel="stylesheet" href="invantory.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Student Inventory</h2>
+
+      <!-- Search field to search students by name or ID -->
+      <input
+        type="text"
+        id="search"
+        placeholder="Search by Name or ID"
+        oninput="searchStudents()"
+      />
+
+      <input type="text" id="name" placeholder="Enter Name" />
+      <input type="text" id="student_id" placeholder="Enter Student ID" />
+      <input type="number" id="age" placeholder="Enter Age" />
+      <input type="text" id="major" placeholder="Enter Major" />
+      <input type="text" id="university" placeholder="Enter University" />
+      <input type="text" id="year" placeholder="Enter Year" />
+      <input
+        type="text"
+        id="hobbies"
+        placeholder="Enter Hobbies (comma-separated)"
+      />
+
+      <div class="buttons">
+        <button onclick="insertStudentInfo()">Insert Info</button>
+        <button onclick="showAllStudents()">Show Info</button>
+        <button onclick="clearInputs()">Clear Inputs</button>
+        <button onclick="clearDisplay()">Clear Display</button>
+      </div>
+
+      <h3>Student Details:</h3>
+      <div id="demo_div"></div>
+    </div>
+
+    <script src="studentinventory.js"></script>
+  </body>
+</html>

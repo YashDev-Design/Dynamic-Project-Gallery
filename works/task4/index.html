@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Calculation statements JS</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="input_div">
+        <input placeholder="Enter the value of X" id="num1" />
+        <input placeholder="Enter the value of Y" id="num2" />
+        <input placeholder="Result will appear here" id="res" disabled />
+      </div>
+
+      <div class="button_div">
+        <button onclick="calculate('add')">Addition (X + Y)</button>
+        <button onclick="calculate('subtract')">Subtraction (X - Y)</button>
+        <button onclick="calculate('multiply')">Multiplication (X * Y)</button>
+        <button onclick="calculate('divide')">Division (X / Y)</button>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

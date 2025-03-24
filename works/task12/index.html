@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Info</title>
+    <link rel="stylesheet" href="array.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Student Information</h2>
+
+      <input type="text" id="name" placeholder="Enter Name" />
+      <input type="number" id="age" placeholder="Enter Age" />
+      <input type="text" id="major" placeholder="Enter Major" />
+      <input type="text" id="university" placeholder="Enter University" />
+      <input type="text" id="year" placeholder="Enter Year" />
+      <input
+        type="text"
+        id="hobbies"
+        placeholder="Enter Hobbies (comma-separated)"
+      />
+
+      <button onclick="insertStudentInfo()">Insert Info</button>
+      <button onclick="showAllStudents()">Show Info</button>
+
+      <h3>Student Details:</h3>
+      <div id="demo_div"></div>
+    </div>
+
+    <script src="studentarray.js"></script>
+  </body>
+</html>

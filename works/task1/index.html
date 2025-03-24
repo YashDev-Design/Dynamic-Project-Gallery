@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Page</title>
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Index Page styles */
+        .index-body {
+            background-color: #f0f0f0;
+        }
+
+        .index-header {
+            background-color: #d3d3d3;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .index-content {
+            background-color: #e0f7fa;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .index-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 10px;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .index-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Dashboard Page styles */
+        .dashboard-body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .dashboard-header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .dashboard-sub-header {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .dashboard-content {
+            margin: 20px;
+            padding: 20px;
+            background-color: #666;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            min-height: 200px;
+        }
+
+        .dashboard-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .dashboard-button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Index Page Content -->
+    <div id="index-page" class="index-body">
+        <div class="index-header">Welcome to My Custom Designed Page!</div>
+        <div class="index-content">
+            <p>This is some random text! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat mollitia enim sunt sapiente nemo assumenda eius tenetur architecto repellat, minus aut! Unde, ut hic. Pariatur repellat fugit esse explicabo officia!</p>
+        </div>
+        <a class="index-button" href="javascript:void(0);" id="goToDashboardBtn">Click here to see the Dashboard</a>
+    </div>
+
+    <!-- Dashboard Page Content -->
+    <div id="dashboard-page" class="dashboard-body" style="display:none;">
+        <div class="dashboard-header">Welcome to the Custom Dashboard</div>
+        <div class="dashboard-sub-header">It doesn't have any functionalities yet!</div>
+        <div class="dashboard-content"></div>
+        <a class="dashboard-button" href="javascript:void(0);" id="goToIndexBtn">Click here to return to Home</a>
+    </div>
+
+    <!-- JavaScript at the bottom to ensure all DOM is loaded first -->
+    <script>
+        // Function to show Dashboard and hide Index
+        function showDashboard() {
+            console.log('Show Dashboard called');
+            document.getElementById('index-page').style.display = 'none';
+            document.getElementById('dashboard-page').style.display = 'block';
+        }
+
+        // Function to show Index and hide Dashboard
+        function showIndex() {
+            console.log('Show Index called');
+            document.getElementById('index-page').style.display = 'block';
+            document.getElementById('dashboard-page').style.display = 'none';
+        }
+
+        // Attach event listeners
+        document.getElementById('goToDashboardBtn').addEventListener('click', showDashboard);
+        document.getElementById('goToIndexBtn').addEventListener('click', showIndex);
+    </script>
+
+</body>
+</html>

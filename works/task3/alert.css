@@ -1,0 +1,38 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+    }
+    .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    }
+    input {
+    padding: 8px;
+    margin: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    button {
+    padding: 8px 15px;
+    border: none;
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    }
+    button:hover {
+    background-color: #218838;
+    }
+    #welcome-message {
+    margin-top: 15px;
+    font-weight: bold;
+    }
+    

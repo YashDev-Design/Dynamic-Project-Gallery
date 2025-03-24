@@ -1,0 +1,35 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+    }
+    label {
+    font-size: 18px;
+    font-weight: bold;
+    }
+    input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    outline: none;
+    }
+    input:focus {
+    border-color: #0056b3;
+    }
+    p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    }
+    span {
+    color: #a9a9a9;
+    font-size: 22px;
+    font-weight: bold;
+    }
+    

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call Stack Implementation</title>
+    <link rel="stylesheet" href="stack.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Call Stack Implementation</h2>
+      <input type="text" id="taskInput" placeholder="Enter Task Name" />
+      <button onclick="addTask()">ADD Task</button>
+      <button onclick="undoTask()">UNDO Task</button>
+      <div class="pipeline">
+        <h3>Current Pipeline:</h3>
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+
+    <script src="stack.js"></script>
+  </body>
+</html>
